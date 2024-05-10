@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+    word-wrap: break-word;
+ 
+}
+.aboutmobile{
+    display: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #01051e;
+    width: 100vw;
+    overflow-x: hidden;
+  
+}
+/* boxsizing :border-box now height will include padding and border */
+/*  *{} its universal selector ,will apply to all elements,body will apply to only body elements */
+/* 50vh is 50% of total viewport and 50% is 50% of parent container */
+nav{
+    background-color:black ;
+    height: 100px;
+    width: 100vw;
+
+}
+.logo{
+    color: white;
+    font-size: 70px;
+    line-height: 100px;
+   font-weight: bold;
+   position: relative;
+   left: 20px;
+
+}
+nav{
+    display: flex;
+}
+nav ul{
+  
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: absolute;
+    top:25px;
+    /* left:80px;
+     */
+     right: 10px;
+}
+    
+nav ul li a {
+    color:white;
+    font-size: 30px;
+
+    text-transform: capitalize;
+    transition: 1s ease;
+  
+
+}
+nav ul li a:hover{
+    background-color: rgb(64, 57, 57);
+    border-radius: 4px;
+    padding:2px 7px ;
+    /* z-index: -1; */
+
+}
+
+
+.checkbtn{
+    color:white;
+    font-size: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    display: none;
+}
+#check{
+    display: none;
+   
+}
+section{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    font-size: 20px;
+    color: aliceblue;
+
+    width: 100vw;
+   
+}
+section div h1{
+    font-size: 50px;
+}
+section div h3{
+    color: rgb(34, 34, 143);
+}
+section div p{
+ text-indent: 50px;
+}
+.mediaclass{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    left: 50px;
+    font-size: 50px;
+    color: black;
+}
+.icon:hover{
+
+    cursor: pointer;
+    background: linear-gradient(rgb(242, 56, 56),rgb(2, 2, 58));
+    border-radius: 5px;
+}
+.circle{
+   
+    width: 300px;
+    height: 300px;
+    background-image: url("profille pic.jpg");
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    gap:200px;
+    position: absolute;
+    top: 200px;
+   
+}
+.home-content{
+        width: 800px; /* Adjust the width of your container as needed */
+        white-space: normal; /* Ensure that text wraps within the container */
+        /* overflow-x: auto; or scroll or hidden, depending on your preference */
+    
+}
+/* .container{
+    height: 100vh;
+    overflow: scroll;
+    /* scroll-snap-type: mandatory; */
+/* } */ 
+.about{
+    color: aliceblue;
+    position: absolute;
+    top: 800px;
+    left: 80px;
+    right: 80px;
+    width: 1300px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.abouthead{
+    color: rgb(3, 3, 135);
+    text-decoration: underline;
+    font-size: 60px;
+
+    
+}
+.about p{
+    font-size: 20px;
+    
+}
+
+.edu{
+    color: rgb(64, 64, 241);
+    position: relative;
+    top: 30px;
+}
+.edu+pre{
+    position: relative;
+    top: 40px;
+    left: -50px;
+    font-family: "Poppins", sans-serif;;
+  
+}
+.skills{
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    right: 60px;
+}
+.skillshead{
+    color: rgb(3, 3, 135);
+    text-decoration: underline;
+    font-size: 60px;
+    
+}
+.skills pre{
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 40px;
+    
+}
+.softskills li{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 60px;
+    left: 100px;
+
+}
+.contact{
+    position: relative;
+    top: 1100px;
+    font-size: 40px;
+}
+.contact h3{
+    color:rgb(6, 6, 132);
+    text-decoration: underline;
+    position: relative;
+    left: 20px;
+}
+.contacts{
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    position: relative;
+    top:30px;
+    left: 80px;
+}
+.contacts li i:hover{
+    background: linear-gradient(rgb(241, 3, 43),rgb(20, 20, 134));
+}
+.contactdata{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    top:5px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.contactdata li{
+    color:aliceblue;
+}
+#skills{
+    position: relative;
+    top:1300px;
+}
+#contact{
+    position: relative;
+    top:1400px;
+
+}
+.skills h3{
+    color: white;
+    font-size: 30px;
+}
+.gmail{
+    color: rgb(93, 2, 93);
+}
+.abouttmob{
+    display: none;
+}
+
+@media(max-width:1300px){
+    .logo{
+        font-size: 45px;
+        line-height: 70px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+ 
+    }
+    .circle{
+        position: absolute;
+        left: 20px;
+    }
+    .home-content{
+        position: relative;
+        left:100px;
+    }
+
+    .about p{
+        width: 1000px;
+       
+    }
+}
+@media(max-width:1100px){
+    .home-content{
+        font-size: 15px;
+        width: 500px;
+    }
+    .home-content h1{
+        font-size: 30px;
+    }
+    /* .home-content{
+        position: relative;
+        left: 40px;
+    } */
+    .about p{
+        font-size: 15px;
+        width: 900px;
+    }    
+    .about{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:858px) {
+    .checkbtn{
+        display: inline;
+        top:10px;
+    }
+    nav ul {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:80px;
+        background-color: gray;
+        z-index: 100;
+        column-gap: 20px;
+        width: 150px;
+        right: 0;
+        height: 200px;
+        
+    }
+    nav{
+       
+        height: 100px;
+        width: 100%;
+
+    
+    }
+    nav ul li a{
+        transition: 1s;
+
+    }
+    /* a:hover{
+        display: none;
+    } */
+    .home,a:hover{
+        background-color: rgb(188, 176, 176);
+        color:black;
+        border-radius: 4px;
+        padding:2px 7px ;
+        z-index: 100;
+       
+    }
+    
+    
+
+#check:checked ~ ul{
+    left: -1000;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   
+   
+}
+.circle{
+    position: relative;
+    top: 20px;
+}
+header div{
+    display: none;
+}
+.home-content{
+    position: absolute;
+    left: 0px;
+}
+
+.about{
+    font-size: 15px;
+}
+.about p{
+    font-size: 15px;
+    width: 600px;
+   
+}
+
+}
+@media (max-width:700px){
+
+  .home-content{
+    
+    width: 350px;
+    position:absolute;
+    top: -50px;
+    left: -50px;
+  }
+  .about{
+    display: none;
+  }
+  .aboutmobile{
+    display: block;
+    color: white;
+    width: 350px;
+    position: relative;
+    top: 770px;
+    left: 25px;
+  }
+  .aboutmobile h3{
+    font-size: 40px;
+    color: rgb(5, 5, 163);
+    text-decoration: underline;
+  }
+ .aboutt{
+    display: none;
+ }
+ .abouttmob{
+    display: block;
+ }
+ #skills{
+    position: relative;
+    top: 860px;
+    
+ }
+ #contact{
+    position: relative;
+    top: 1000px;
+ }
+
+}
